@@ -10,6 +10,9 @@ html {
 
 .card {
     /* display, flex-direction */
+    display: flex;
+    flex-direction: row;
+    
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
@@ -17,6 +20,10 @@ html {
 
 .card__description {
     /* display, flex-direction, justify-content, align-items */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 15px 0;
 }
 
@@ -36,12 +43,12 @@ html {
     font-weight: 700;
     padding: 5px 15px;
     border-top: 1px solid #D7DBDD;
-    background-color: #EEF3F5;
+    background-color: rgb(194, 232, 247);
 }
 
 .cardGroup {
     /* display */
-  
+    display: flex;
     border: 1px solid #CAD0D2;
     border-radius: 4px;
     overflow: hidden;
@@ -49,9 +56,12 @@ html {
   
     .cardGroup__card {
       /* flex-grow, flex-shrink, flex-basis */
-  
       border: none;
       border-radius: 0;
+      flex-direction: column;
+      flex-basis: 34%;
+      flex-grow: 1;
+      flex-shrink: 1;
     }
   
     .cardGroup__card {
@@ -60,4 +70,9 @@ html {
   
     .cardGroup__cardDescription {
       /* flex-grow, flex-shrink, flex-basis */
+      flex-direction: column;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 66%;
+    
     }
